@@ -5,10 +5,22 @@ config ZMK_KEYBOARD_NAME
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
+config ZMK_SPLIT
+        default y
+
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
+
+config BT_MAX_CONN
+    default 7
+
+config BT_MAX_PAIRED
+    default 7
+
 
 endif
 
-if SHIELD_CORNE_XIAO_V1_DONGLE || SHIELD_CORNE_XIAO_V1_LEFT  || SHIELD_CORNE_XIAO_V1_RIGHT
+if SHIELD_CORNE_XIAO_V1_LEFT  || SHIELD_CORNE_XIAO_V1_RIGHT
 
 config ZMK_SPLIT
     default y
