@@ -1,23 +1,21 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <layouts/corne_xiao/6column.dtsi> 
+
+&corne_xiao_6col_layout {
+    transform = <&default_transform>;
+};
+
 / {
+
     chosen {
         zmk,kscan = &mock_kscan;
+        zmk,physical-layout = &corne_xiao_6col_layout;
     };
-
     mock_kscan: mock_kscan_0 {
         compatible = "zmk,kscan-mock";
         columns = <0>;
         rows = <0>;
         events = <0>;
-    };
-};
-&corne_xiao_6col_layout {
-    transform = <&default_transform>;
-};
-/ {
-    chosen {
-      zmk,kscan = &kscan0;
-      zmk,physical-layout = &corne_xiao_6col_layout;
     };
 
     default_transform: keymap_transform_0 {
