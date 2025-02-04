@@ -1,6 +1,8 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <layouts/corne_xiao/6column.dtsi> 
 
+&xiao_serial { status = "disabled"; };
+
 &corne_xiao_6col_layout {
     transform = <&default_transform>;
 };
@@ -34,7 +36,7 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(3,5) RC(3,6) RC(2,6) RC(2,7) 
       >;
     };
 
-    mock_kscan: mock_kscan_0 {
+    mock_kscan: kscan {
       compatible = "zmk,kscan-gpio-matrix";
       wakeup-source;
 
