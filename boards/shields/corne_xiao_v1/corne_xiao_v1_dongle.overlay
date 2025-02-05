@@ -7,7 +7,7 @@
     };
 
     mock_kscan: kscan_0 {
-        compatible = "zmk,kscan-mock";
+        compatible = "zmk,kscan-gpio-matrix";
         columns = <0>;
         rows = <0>;
         events = <0>;
