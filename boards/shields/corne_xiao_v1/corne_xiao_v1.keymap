@@ -47,7 +47,7 @@
             bindings = <
 &kp ESC         &kp N1    &kp N2     &kp N3        &kp N4    &kp N5                         &kp N6           &kp N7      &kp N8    &kp N9    &kp N0    &kp BSPC
 &kp LEFT_SHIFT  &trans    &trans     &kp C_VOL_DN  &kp UP    &kp C_VOL_UP                   &kp MINUS        &kp EQUAL   &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-&kp TAB         &kp LALT  &kp LCTRL  &kp LEFT      &kp DOWN  &kp RIGHT    &bootloader &none &kp PRINTSCREEN  &kp K_MUTE  &kp HOME  &kp END   &kp INS   &trans
+&kp TAB         &kp LALT  &kp LCTRL  &kp LEFT      &kp DOWN  &kp RIGHT    &bootloader &none &kp PRINTSCREEN  &kp C_MUTE  &kp HOME  &kp END   &kp INS   &trans
                                      &kp LGUI      &trans    &trans                         &trans           &trans      &kp LALT
             >;
         };
