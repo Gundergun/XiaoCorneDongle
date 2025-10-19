@@ -19,7 +19,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "base";
+            display-name = "Base";
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
 
 // -------------------------------------------------------------------------------------------------
@@ -36,7 +36,7 @@
         };
 
         lower_layer {
-            display-name = "lower";
+            display-name = "Lower";
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
 
 // ------------------------------------------------------------------------------------------------
@@ -53,7 +53,7 @@
         };
 
         raise_layer {
-            display-name = "raise";
+            display-name = "Raise";
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
 
 // ------------------------------------------------------------------------------------------------
@@ -86,7 +86,7 @@
             >;
         };
 
-        extra {
+        extra2 {
             display-name = "extra";
             status = "reserved";
         };
