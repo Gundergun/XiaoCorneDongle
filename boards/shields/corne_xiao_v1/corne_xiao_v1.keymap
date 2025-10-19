@@ -32,7 +32,6 @@
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V      &kp B &kp C_MUTE &none &kp N  &kp M    &kp COMMA  &kp DOT  &kp FSLH  &kp DEL
                          &kp LALT  &kp SPACE  &mo 1                  &mo 2  &kp RET  &kp LGUI
             >;
-
         };
 
         lower_layer {
@@ -69,25 +68,13 @@
             >;
         };
 
-        extra1 {
+        bluetooth {
             display-name = "Bluetooth";
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
-
-// ------------------------------------------------------------------------------------------------
-// |      |     |     |     |     |     |                    | bt0 | bt1 | bt2 | bt3 | bt4 | BTCLR |
-// |      |     |     |     |     |     |                    |     |     |     |     |     |       |
-// |      |     |     |     |     |     |        |  |        |     |     |     |     |     |       |
-//                    |     |     |     |                    |     |     |     |
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans  &trans                   &trans        &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans &none &bootloader &trans        &trans        &trans        &trans        &trans        &trans
-                        &trans  &trans  &trans                   &trans        &trans        &trans
-            >;
+             status = "reserved";
         };
 
-        extra2 {
-            display-name = "extra2";
+        extra {
+            display-name = "extra";
             status = "reserved";
         };
     };
